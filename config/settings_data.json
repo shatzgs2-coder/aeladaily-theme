@@ -1,0 +1,113 @@
+{
+  "current": "aeladaily",
+  "presets": {
+    "aeladaily": {
+      "logo_width": 120,
+      "color_schemes": {
+        "scheme-1": {
+          "settings": {
+            "background": "#FAF7F2",
+            "background_gradient": "",
+            "text": "#3D382D",
+            "button": "#C4956A",
+            "button_label": "#FFFFFF",
+            "secondary_button_label": "#6B5E4F",
+            "shadow": "#8B7D6B"
+          }
+        },
+        "scheme-2": {
+          "settings": {
+            "background": "#F5F0E8",
+            "background_gradient": "",
+            "text": "#3D382D",
+            "button": "#8B9E7B",
+            "button_label": "#FFFFFF",
+            "secondary_button_label": "#8B7D6B",
+            "shadow": "#8B7D6B"
+          }
+        },
+        "scheme-3": {
+          "settings": {
+            "background": "#FFFFFF",
+            "background_gradient": "",
+            "text": "#3D382D",
+            "button": "#D4A574",
+            "button_label": "#FFFFFF",
+            "secondary_button_label": "#B5A898",
+            "shadow": "#8B7D6B"
+          }
+        },
+        "scheme-4": {
+          "settings": {
+            "background": "#FAF7F2",
+            "background_gradient": "",
+            "text": "#C4956A",
+            "button": "#3D382D",
+            "button_label": "#FAF7F2",
+            "secondary_button_label": "#8B7D6B",
+            "shadow": "#8B7D6B"
+          }
+        },
+        "scheme-5": {
+          "settings": {
+            "background": "#C4956A",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#C4956A",
+            "secondary_button_label": "#F5F0E8",
+            "shadow": "#6B5E4F"
+          }
+        }
+      },
+      "type_header_font": "playfair_display_n4",
+      "heading_scale": 105,
+      "type_body_font": "inter_n4",
+      "body_scale": 100,
+      "page_width": 1200,
+      "spacing_sections": 24,
+      "spacing_grid_horizontal": 16,
+      "spacing_grid_vertical": 16,
+      "animations_reveal_on_scroll": true,
+      "animations_hover_elements": "none",
+      "buttons_border_thickness": 0,
+      "buttons_border_opacity": 0,
+      "buttons_radius": 4,
+      "buttons_shadow_opacity": 0,
+      "buttons_shadow_horizontal_offset": 0,
+      "buttons_shadow_vertical_offset": 2,
+      "buttons_shadow_blur": 8,
+      "card_style": "card",
+      "card_image_padding": 0,
+      "card_text_alignment": "left",
+      "card_color_scheme": "scheme-2",
+      "card_border_thickness": 1,
+      "card_border_opacity": 20,
+      "card_corner_radius": 8,
+      "card_shadow_opacity": 5,
+      "card_shadow_horizontal_offset": 0,
+      "card_shadow_vertical_offset": 2,
+      "card_shadow_blur": 8,
+      "badge_position": "bottom left",
+      "badge_corner_radius": 4,
+      "sale_badge_color_scheme": "scheme-5",
+      "sold_out_badge_color_scheme": "scheme-3",
+      "brand_headline": "aeladaily",
+      "brand_description": "<p>Curated home essentials for slow, intentional living. Bringing warmth and character to everyday spaces.</p>",
+      "brand_image_width": 120,
+      "predictive_search_enabled": true,
+      "predictive_search_show_vendor": false,
+      "predictive_search_show_price": false,
+      "currency_code_enabled": true,
+      "cart_type": "drawer",
+      "show_vendor": false,
+      "show_cart_note": true,
+      "cart_drawer_collection": "",
+      "cart_color_scheme": "scheme-1",
+      "sections": {
+        "main-password-header": { "type": "main-password-header", "settings": { "color_scheme": "scheme-1" } },
+        "main-password-footer": { "type": "main-password-footer", "settings": { "color_scheme": "scheme-1" } }
+      }
+    }
+  }
+}

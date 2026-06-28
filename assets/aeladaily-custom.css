@@ -1,10 +1,10 @@
 /* =============================================
-   aeladaily — PureWohnen Earth Tone Theme
-   Warm natural palette: cream + dark brown + beige
+   aeladaily — PureWohnen Global CSS
+   Warm earth palette: cream + dark brown + beige
    Fonts: Raleway (headings) + Open Sans (body)
    ============================================= */
 
-/* --- 1. Global --- */
+/* --- 1. Global Base --- */
 html { scroll-behavior: smooth; }
 
 body {
@@ -35,7 +35,7 @@ body, .gradient,
 .header__heading-link {
   font-family: 'Raleway', sans-serif !important;
   font-size: 1.4rem !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   color: #6b5b3e !important;
   text-decoration: none !important;
   letter-spacing: 0.5px !important;
@@ -44,13 +44,13 @@ body, .gradient,
 .header__menu-item {
   color: #8b7355 !important;
   font-size: 0.85rem !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   letter-spacing: 0.3px !important;
   transition: color 0.2s !important;
 }
 .header__menu-item:hover { color: #6b5b3e !important; }
 
-/* Mobile menu */
+/* --- 3. Mobile Menu --- */
 .menu-drawer__inner-container { background: #FEFCF8 !important; }
 .menu-drawer__menu-item { color: #3d3629 !important; }
 .menu-drawer__close-button { color: #8b7355 !important; }
@@ -59,19 +59,19 @@ body, .gradient,
 .menu-drawer__menu-item:focus,
 .menu-drawer__menu-item:hover {
   color: #6b5b3e !important;
-  background: rgba(107,91,62,0.05) !important;
+  background: rgba(107,91,62,0.06) !important;
 }
 .header__icon--menu .icon-hamburger,
 .header__icon--menu .icon-close { color: #8b7355 !important; }
 .header__icon:hover .icon-hamburger,
 .header__icon:hover .icon-close { color: #6b5b3e !important; }
 
-/* --- 3. Announcement Bar --- */
+/* --- 4. Announcement Bar --- */
 .announcement-bar {
   background: #F5F0E8 !important;
   border-bottom: 1px solid #e8e2d8 !important;
   font-size: 0.78rem !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   color: #5c4c35 !important;
   padding: 0.45rem 1rem !important;
   min-height: auto !important;
@@ -82,119 +82,58 @@ body, .gradient,
   font-size: 0.78rem !important;
   padding: 0 !important;
 }
-.announcement-bar__link {
-  color: #6b5b3e !important;
-  text-decoration: underline !important;
-  text-underline-offset: 3px !important;
-}
-.announcement-bar__link:hover { color: #A08868 !important; }
 
-/* --- 4. Buttons --- */
-.button,
-.shopify-challenge__button,
-.customer button {
-  border-radius: 4px !important;
-  font-weight: 500 !important;
+/* --- 5. Buttons --- */
+.button, .shopify-challenge__button, .customer button {
+  border-radius: 37px !important;
+  font-weight: 600 !important;
   font-family: 'Open Sans', sans-serif !important;
-  font-size: 0.9rem !important;
-  padding: 0.8rem 2rem !important;
+  font-size: 0.92rem !important;
+  padding: 0.85rem 2rem !important;
   transition: all 0.25s !important;
   letter-spacing: 0.3px !important;
   min-width: auto !important;
   min-height: auto !important;
 }
 
-.button--primary,
-.shopify-challenge__button {
+.button--primary, .shopify-challenge__button {
   background: #6b5b3e !important;
-  color: #FFFFFF !important;
+  color: #FEFCF8 !important;
   border: none !important;
   box-shadow: none !important;
 }
-.button--primary:hover,
-.shopify-challenge__button:hover {
+.button--primary:hover, .shopify-challenge__button:hover {
   background: #5c4c35 !important;
   box-shadow: 0 4px 16px rgba(107,91,62,0.25) !important;
   transform: translateY(-1px) !important;
 }
-.button--primary::after,
-.button--primary::before { display: none !important; }
+.button--primary::after, .button--primary::before { display: none !important; }
 
 .button--secondary {
   background: transparent !important;
   border: 1.5px solid #C4B094 !important;
-  color: #5c4c35 !important;
+  color: #3d3629 !important;
   box-shadow: none !important;
 }
 .button--secondary:hover {
   border-color: #6b5b3e !important;
   color: #6b5b3e !important;
-  background: transparent !important;
+  background: rgba(107,91,62,0.04) !important;
   box-shadow: none !important;
+  transform: translateY(-1px) !important;
 }
-.button--secondary::after,
-.button--secondary::before { display: none !important; }
-
-/* --- 5. Section Styles --- */
-.section { padding: 5rem 2rem !important; }
-.section-label {
-  font-size: 0.72rem !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 4px !important;
-  color: #6b5b3e !important;
-  margin-bottom: 0.75rem !important;
-}
-.section-title {
-  font-family: 'Raleway', sans-serif !important;
-  font-size: clamp(1.8rem, 3.5vw, 2.6rem) !important;
-  font-weight: 500 !important;
-  line-height: 1.2 !important;
-  margin-bottom: 1rem !important;
-  color: #3d3629 !important;
-}
-.section-desc {
-  color: #8b7355 !important;
-  font-size: 1rem !important;
-  max-width: 580px !important;
-  font-weight: 300 !important;
-  line-height: 1.7 !important;
-}
-
-/* Rich text */
-.rich-text__heading {
-  font-family: 'Raleway', sans-serif !important;
-  font-size: clamp(1.8rem, 3.5vw, 2.6rem) !important;
-  font-weight: 500 !important;
-  line-height: 1.2 !important;
-  color: #3d3629 !important;
-}
-.rich-text__caption {
-  color: #6b5b3e !important;
-  font-size: 0.72rem !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 4px !important;
-}
-.rich-text__text {
-  color: #8b7355 !important;
-  font-size: 1rem !important;
-  font-weight: 300 !important;
-  line-height: 1.7 !important;
-}
-.rich-text.content-container { background: transparent !important; }
+.button--secondary::after, .button--secondary::before { display: none !important; }
 
 /* --- 6. Product Cards --- */
-.card-wrapper { color: inherit !important; }
 .card--card {
   background: #FFFFFF !important;
   border: 1px solid #e8e2d8 !important;
-  border-radius: 8px !important;
+  border-radius: 10px !important;
   transition: all 0.3s !important;
 }
 .card--card:after { box-shadow: 0 2px 8px rgba(0,0,0,0.04) !important; }
 .card--card:hover {
-  transform: translateY(-3px) !important;
+  transform: translateY(-4px) !important;
   border-color: #6b5b3e !important;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important;
 }
@@ -211,20 +150,13 @@ body, .gradient,
   color: #3d3629 !important;
 }
 .card__heading {
-  font-size: 0.95rem !important;
+  font-size: 0.92rem !important;
   font-weight: 500 !important;
   line-height: 1.35 !important;
   margin-bottom: 0.5rem !important;
 }
 .card__heading a { color: #3d3629 !important; text-decoration: none !important; }
 .card__heading a:hover { color: #6b5b3e !important; }
-.card__information .caption {
-  font-size: 0.7rem !important;
-  font-weight: 500 !important;
-  color: #6b5b3e !important;
-  text-transform: uppercase !important;
-  letter-spacing: 1.5px !important;
-}
 
 .price__regular .price-item,
 .price-item--regular {
@@ -233,13 +165,13 @@ body, .gradient,
   color: #3d3629 !important;
 }
 .price--on-sale .price-item--regular {
-  font-size: 0.8rem !important;
+  font-size: 0.78rem !important;
   color: #a89880 !important;
   text-decoration: line-through !important;
 }
 .price--on-sale .price__sale .price-item { color: #6b5b3e !important; }
 
-/* Badges */
+/* --- 7. Badges --- */
 .badge {
   border-radius: 4px !important;
   font-size: 0.65rem !important;
@@ -257,17 +189,98 @@ body, .gradient,
   left: auto !important;
 }
 
-/* --- 7. Product Grid --- */
-.collection .grid { gap: 1.5rem !important; }
-.collection .grid--4-col-desktop .grid__item { padding: 0.75rem !important; }
-.featured-collection .title {
+/* --- 8. Featured Collection / Product Grid --- */
+.featured-collection .title,
+.featured-collection .title-wrapper-with-link .title {
   font-family: 'Raleway', sans-serif !important;
   font-size: clamp(1.8rem, 3.5vw, 2.6rem) !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   color: #3d3629 !important;
 }
+.featured-collection .collection-description {
+  color: #8b7355 !important;
+  font-size: 0.95rem !important;
+}
+.collection .grid { gap: 1.5rem !important; }
+.collection .grid--4-col-desktop .grid__item { padding: 0.75rem !important; }
 
-/* --- 8. Footer --- */
+/* --- 9. Multicolumn Trust Bar --- */
+.multicolumn .title {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem) !important;
+  font-weight: 600 !important;
+  color: #3d3629 !important;
+}
+.multicolumn-card__info .multicolumn-card__image-wrapper {
+  margin-bottom: 0.75rem;
+}
+.multicolumn-card__info .h5 {
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 600 !important;
+  color: #3d3629 !important;
+}
+.multicolumn-card__info .rte {
+  color: #8b7355 !important;
+  font-size: 0.85rem !important;
+}
+
+/* --- 10. Image With Text --- */
+.image-with-text .image-with-text__heading {
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 600 !important;
+  color: #3d3629 !important;
+}
+.image-with-text .image-with-text__text {
+  color: #8b7355 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.7 !important;
+}
+
+/* --- 11. Newsletter --- */
+.newsletter__wrapper {
+  text-align: center !important;
+  padding: 5rem 2rem !important;
+}
+.newsletter__wrapper .newsletter-form__field-wrapper {
+  max-width: 460px !important;
+  margin: 2rem auto 0 !important;
+}
+.newsletter__wrapper .newsletter__heading,
+.newsletter__wrapper h2 {
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 600 !important;
+  color: #3d3629 !important;
+}
+.newsletter__wrapper .newsletter__subheading,
+.newsletter__wrapper p {
+  color: #8b7355 !important;
+}
+
+.newsletter__wrapper .field__input {
+  background: #FFFFFF !important;
+  border: 1.5px solid #e8e2d8 !important;
+  border-radius: 8px !important;
+  color: #3d3629 !important;
+  font-size: 0.9rem !important;
+  font-family: 'Open Sans', sans-serif !important;
+  padding: 0.85rem 1.25rem !important;
+}
+.newsletter__wrapper .field__input:focus {
+  border-color: #6b5b3e !important;
+  box-shadow: none !important;
+}
+.newsletter-form__button { border-radius: 8px !important; }
+
+/* --- 12. Rich Text --- */
+.rich-text__heading {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem) !important;
+  font-weight: 600 !important;
+  color: #3d3629 !important;
+}
+.rich-text__text { color: #8b7355 !important; }
+
+/* --- 13. Footer --- */
 .footer {
   background: #F5F0E8 !important;
   border-top: 1px solid #e8e2d8 !important;
@@ -280,16 +293,17 @@ body, .gradient,
   letter-spacing: 2px !important;
   color: #8b7355 !important;
   margin-bottom: 1.25rem !important;
+  font-family: 'Raleway', sans-serif !important;
 }
 .footer-block__details-content .list-menu__item--link {
   color: #8b7355 !important;
   font-size: 0.85rem !important;
   padding: 0 !important;
   margin-bottom: 0.5rem !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   transition: color 0.2s !important;
 }
-.footer-block__details-content .list-menu__item--link:hover { color: #6b5b3e !important; }
+.footer-block__details-content .list-menu__item--link:hover { color: #6b5b3e !important; text-decoration: underline !important; }
 .footer__content-bottom {
   border-top: 1px solid #e8e2d8 !important;
   padding-top: 2rem !important;
@@ -298,334 +312,79 @@ body, .gradient,
 .footer__localization { color: #a89880 !important; }
 .footer-block__brand-info h2 {
   font-family: 'Raleway', sans-serif !important;
-  font-size: 1.4rem !important;
+  font-size: 1.3rem !important;
   color: #6b5b3e !important;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
 }
 .footer-block__brand-info .rte {
   color: #8b7355 !important;
   font-size: 0.85rem !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   line-height: 1.6 !important;
 }
-.footer-block--newsletter h2 {
-  font-size: 0.75rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 2px !important;
-  color: #8b7355 !important;
-  text-transform: uppercase !important;
-}
-.footer-block__newsletter .field__input {
-  background: #FFFFFF !important;
-  border: 1.5px solid #e8e2d8 !important;
-  border-radius: 4px !important;
-  color: #3d3629 !important;
-  font-size: 0.9rem !important;
-  font-family: 'Open Sans', sans-serif !important;
-}
-.footer-block__newsletter .field__input:focus { border-color: #6b5b3e !important; }
-.footer-block__newsletter .field__input::placeholder { color: #a89880 !important; }
 .list-social__item .icon { color: #8b7355 !important; }
 .list-social__item:hover .icon { color: #6b5b3e !important; }
 
-/* --- 9. Newsletter Section --- */
-.newsletter__wrapper {
-  text-align: center !important;
-  padding: 5rem 2rem !important;
-  background: #F5F0E8 !important;
-}
-.newsletter__wrapper .newsletter-form__field-wrapper {
-  max-width: 460px !important;
-  margin: 2rem auto 0 !important;
-}
-.newsletter__wrapper .field__input {
-  background: #FFFFFF !important;
-  border: 1.5px solid #e8e2d8 !important;
-  border-radius: 4px !important;
-  color: #3d3629 !important;
-  font-size: 0.9rem !important;
-  font-family: 'Open Sans', sans-serif !important;
-  padding: 0.85rem 1.25rem !important;
-}
-.newsletter__wrapper .field__input:focus {
-  border-color: #6b5b3e !important;
-  box-shadow: none !important;
-}
-.newsletter-form__button { border-radius: 4px !important; }
-
-/* --- 10. Inputs --- */
+/* --- 14. Inputs --- */
 select, .field__input, .select__select {
   background: #FFFFFF !important;
   border: 1.5px solid #e8e2d8 !important;
   color: #3d3629 !important;
-  border-radius: 4px !important;
+  border-radius: 8px !important;
 }
 select:focus, .field__input:focus, .select__select:focus {
   border-color: #6b5b3e !important;
   box-shadow: none !important;
 }
 
-/* --- 11. Cart / Drawer --- */
-cart-drawer, .cart-drawer { background: #FEFCF8 !important; border-left: 1px solid #e8e2d8 !important; }
+/* --- 15. Cart / Drawer --- */
+cart-drawer, .cart-drawer {
+  background: #FEFCF8 !important;
+  border-left: 1px solid #e8e2d8 !important;
+}
 .cart-drawer__header { border-bottom: 1px solid #e8e2d8 !important; }
-.drawer__heading { color: #3d3629 !important; font-family: 'Raleway', sans-serif !important; }
+.drawer__heading {
+  color: #3d3629 !important;
+  font-family: 'Raleway', sans-serif !important;
+}
 .cart-drawer .cart-item { border-bottom: 1px solid #e8e2d8 !important; }
 .cart-item__name { color: #3d3629 !important; }
 .cart-item__price { color: #6b5b3e !important; }
 .cart-drawer__footer { border-top: 1px solid #e8e2d8 !important; }
 .cart-drawer .totals { color: #3d3629 !important; }
-.cart-drawer .totals__total-value { color: #6b5b3e !important; font-weight: 600 !important; }
+.cart-drawer .totals__total-value { color: #6b5b3e !important; font-weight: 700 !important; }
 .cart-notification { background: #FEFCF8 !important; border: 1px solid #e8e2d8 !important; }
-.cart-notification__header { border-bottom: 1px solid #e8e2d8 !important; }
-.cart-notification__heading { color: #3d3629 !important; }
 
-/* --- 12. Search / Modals --- */
+/* --- 16. Search --- */
 .modal__toggle { color: #8b7355 !important; }
-.search-modal { background: rgba(254,252,248,0.95) !important; backdrop-filter: blur(20px) !important; }
-.search-modal__form .field__input:focus { border-color: #6b5b3e !important; }
-
-.predictive-search { background: #FEFCF8 !important; border: 1px solid #e8e2d8 !important; }
+.predictive-search {
+  background: #FEFCF8 !important;
+  border: 1px solid #e8e2d8 !important;
+}
 .predictive-search__heading { color: #8b7355 !important; }
 .predictive-search__item-heading { color: #3d3629 !important; }
 .predictive-search__item-price { color: #6b5b3e !important; }
 
-/* --- 13. Pagination --- */
+/* --- 17. Pagination --- */
 .pagination__item { color: #8b7355 !important; }
-.pagination__item--current { background: #6b5b3e !important; color: #FFFFFF !important; }
+.pagination__item--current {
+  background: #6b5b3e !important;
+  color: #FFFFFF !important;
+}
 .pagination__item:hover { color: #6b5b3e !important; }
 
-/* --- 14. Facets --- */
-.facets__summary { color: #3d3629 !important; }
-.facets__display { background: #FEFCF8 !important; border: 1px solid #e8e2d8 !important; }
-.facets__label { color: #8b7355 !important; }
-.facet-checkbox { color: #8b7355 !important; }
-
-/* --- 15. Quantity --- */
-.quantity { background: #FFFFFF !important; border: 1px solid #e8e2d8 !important; border-radius: 4px !important; }
+/* --- 18. Quantity --- */
+.quantity {
+  background: #FFFFFF !important;
+  border: 1px solid #e8e2d8 !important;
+  border-radius: 8px !important;
+}
 .quantity__input { color: #3d3629 !important; background: transparent !important; }
-.quantity__button { color: #8b7355 !important; background: transparent !important; }
+.quantity__button { color: #8b7355 !important; }
 .quantity__button:hover { color: #6b5b3e !important; }
 
-/* --- 16. Product Page --- */
-.product__title h1 { font-family: 'Raleway', sans-serif !important; color: #3d3629 !important; }
-.product__description { color: #8b7355 !important; }
-.product-form__input .form__label { color: #8b7355 !important; }
-
 /* =============================================
-   17. Custom Sections — aeladaily Hero, Story, etc.
-   ============================================= */
-
-/* Hero */
-.daily-hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 5rem 2rem 3rem;
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(180deg, #FEFCF8 0%, #F5F0E8 40%, #F0E8D8 100%);
-}
-.daily-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at 30% 20%, rgba(107,91,62,0.08) 0%, transparent 60%),
-    radial-gradient(ellipse at 70% 60%, rgba(160,136,104,0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 90%, rgba(212,165,116,0.05) 0%, transparent 50%);
-  z-index: 0;
-}
-.daily-hero-content { position: relative; z-index: 1; max-width: 700px; }
-.daily-hero-badge {
-  display: inline-block;
-  padding: 0.35rem 1rem;
-  background: rgba(107,91,62,0.1);
-  color: #6b5b3e;
-  border: 1px solid rgba(107,91,62,0.15);
-  border-radius: 4px;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-}
-
-.daily-hero h1 {
-  font-family: 'Raleway', sans-serif;
-  font-size: clamp(2.8rem, 5vw, 4.5rem);
-  font-weight: 400;
-  line-height: 1.15;
-  color: #3d3629;
-  margin-bottom: 1.25rem;
-  letter-spacing: -0.5px;
-}
-
-.daily-hero-desc {
-  font-size: 1.1rem;
-  color: #8b7355;
-  max-width: 540px;
-  margin: 0 auto 2rem;
-  font-weight: 300;
-  line-height: 1.8;
-}
-
-.daily-hero-cta {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.daily-hero-stats {
-  display: flex;
-  gap: 3.5rem;
-  margin-top: 4rem;
-  position: relative;
-  z-index: 1;
-}
-.daily-stat { text-align: center; }
-.daily-stat-num { font-size: 1.5rem; font-weight: 600; color: #3d3629; font-family: 'Raleway', sans-serif; }
-.daily-stat-label { font-size: 0.72rem; color: #8b7355; margin-top: 0.25rem; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; }
-
-/* Brand Story */
-.daily-story-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-  margin-top: 3rem;
-}
-.daily-story-image {
-  background: linear-gradient(135deg, #d4c4a8, #C4B094);
-  border-radius: 12px;
-  aspect-ratio: 4/5;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #e8e2d8;
-}
-.daily-story-image-inner {
-  font-family: 'Raleway', sans-serif;
-  font-size: 3.5rem;
-  color: rgba(255,255,255,0.3);
-  text-align: center;
-  line-height: 1.2;
-  font-weight: 300;
-}
-.daily-story-text h3 {
-  font-size: 1.6rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  color: #3d3629;
-  font-family: 'Raleway', sans-serif;
-}
-.daily-story-text p {
-  color: #8b7355;
-  margin-bottom: 1.25rem;
-  font-weight: 300;
-  line-height: 1.8;
-}
-
-.daily-values-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
-  margin-top: 2rem;
-}
-.daily-value-card {
-  background: #FFFFFF;
-  border: 1px solid #e8e2d8;
-  border-radius: 8px;
-  padding: 1.5rem;
-  transition: border-color 0.3s;
-}
-.daily-value-card:hover { border-color: #6b5b3e; }
-.daily-value-card .daily-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
-.daily-value-card h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.25rem; color: #3d3629; }
-.daily-value-card p { font-size: 0.78rem; color: #8b7355; margin: 0; font-weight: 300; }
-
-/* Features Grid */
-.daily-features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-top: 3rem;
-}
-.daily-feature-card {
-  background: #FFFFFF;
-  border: 1px solid #e8e2d8;
-  border-radius: 8px;
-  padding: 2rem;
-  text-align: center;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-.daily-feature-card:hover {
-  border-color: #6b5b3e;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
-}
-.daily-feature-icon { font-size: 2.2rem; margin-bottom: 0.75rem; }
-.daily-feature-card h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; color: #3d3629; }
-.daily-feature-card p { font-size: 0.85rem; color: #8b7355; font-weight: 300; line-height: 1.6; }
-
-/* Shipping Cards */
-.daily-shipping-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2.5rem;
-}
-.daily-shipping-card {
-  background: #FFFFFF;
-  border: 1px solid #e8e2d8;
-  border-radius: 8px;
-  padding: 2rem;
-  text-align: center;
-  transition: border-color 0.3s;
-}
-.daily-shipping-card.de { border-top: 3px solid #6b5b3e; }
-.daily-shipping-card.eu { border-top: 3px solid #A08868; }
-.daily-shipping-card.ww { border-top: 3px solid #a08868; }
-
-.daily-preorder-card {
-  background: #FFFFFF;
-  border: 1px solid #e8e2d8;
-  border-radius: 8px;
-  padding: 2rem;
-  margin-top: 2rem;
-  text-align: center;
-  border-left: 3px solid #6b5b3e;
-}
-
-/* Category Grid */
-.daily-category-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-top: 2.5rem;
-}
-.daily-category-item {
-  background: #FFFFFF;
-  border: 1px solid #e8e2d8;
-  border-radius: 8px;
-  padding: 1.25rem;
-  text-align: center;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-.daily-category-item:hover {
-  border-color: #6b5b3e;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-.daily-category-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
-.daily-category-name { font-size: 0.85rem; color: #3d3629; font-weight: 500; }
-
-/* =============================================
-   18. Responsive
+   19. Responsive
    ============================================= */
 
 @media screen and (max-width: 749px) {
@@ -634,66 +393,30 @@ cart-drawer, .cart-drawer { background: #FEFCF8 !important; border-left: 1px sol
 
   .announcement-bar { font-size: 0.68rem !important; padding: 0.35rem 0.75rem !important; }
 
-  .daily-hero {
-    min-height: auto;
-    padding: 4rem 1.25rem 2.5rem !important;
-  }
-  .daily-hero-content { max-width: 100%; }
-  .daily-hero-badge { font-size: 0.65rem; margin-bottom: 1.25rem; }
-  .daily-hero h1 { font-size: clamp(2rem, 7vw, 2.8rem); margin-bottom: 0.75rem; }
-  .daily-hero-desc { font-size: 0.9rem; max-width: 100%; padding: 0 0.25rem; }
-  .daily-hero-cta { flex-direction: column; gap: 0.75rem; width: 100%; max-width: 260px; margin: 0 auto; }
-  .daily-hero-cta .button { width: 100%; text-align: center; }
-  .daily-hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 2.5rem; }
-  .daily-stat-num { font-size: 1.25rem; }
+  .button { font-size: 0.85rem !important; padding: 0.75rem 1.5rem !important; }
 
-  .section { padding: 2.5rem 1.25rem !important; }
-  .section-label { font-size: 0.65rem !important; letter-spacing: 3px !important; }
-  .section-title, .rich-text__heading { font-size: clamp(1.5rem, 4.5vw, 1.8rem) !important; }
-  .section-desc, .rich-text__text { font-size: 0.9rem !important; }
-
-  .button { font-size: 0.85rem !important; padding: 0.7rem 1.5rem !important; }
-
-  .card--card { border-radius: 6px !important; }
+  .card--card { border-radius: 8px !important; }
   .card__information { padding: 1rem !important; }
-  .card__heading { font-size: 0.85rem !important; }
+  .card__heading { font-size: 0.82rem !important; }
   .grid { gap: 0.75rem !important; }
-  .grid--2-col-tablet-down .grid__item { padding: 0.25rem !important; }
 
-  .daily-story-grid { gap: 1.5rem; margin-top: 2rem; }
-  .daily-story-image { aspect-ratio: 3/2; border-radius: 8px; }
-  .daily-story-image-inner { font-size: 2rem; }
-  .daily-story-text h3 { font-size: 1.25rem; }
-  .daily-story-text p { font-size: 0.9rem; }
-  .daily-values-grid { gap: 0.5rem; margin-top: 1.5rem; }
-  .daily-value-card { padding: 1.25rem; }
-
-  .daily-features-grid { gap: 1rem; margin-top: 2rem; }
-  .daily-feature-card { padding: 1.5rem; }
-  .daily-feature-icon { font-size: 1.8rem; }
-  .daily-feature-card h4 { font-size: 0.9rem; }
-  .daily-feature-card p { font-size: 0.8rem; }
-
-  .daily-shipping-row { gap: 1rem; margin-top: 2rem; }
-  .daily-shipping-card { padding: 1.5rem; }
-  .daily-preorder-card { padding: 1.5rem; margin-top: 1.5rem; }
+  .featured-collection .title,
+  .multicolumn .title,
+  .rich-text__heading {
+    font-size: clamp(1.5rem, 4.5vw, 1.8rem) !important;
+  }
 
   .newsletter__wrapper { padding: 3rem 1.25rem !important; }
   .footer { padding: 2.5rem 1.25rem 1.5rem !important; }
   .footer__copyright { font-size: 0.72rem !important; }
-  .cart-drawer { width: 100% !important; max-width: 100% !important; }
 
-  .daily-category-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  .cart-drawer { width: 100% !important; max-width: 100% !important; }
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
-  .daily-hero { min-height: 70vh; }
-  .daily-hero h1 { font-size: clamp(2.5rem, 4.5vw, 3.5rem); }
-  .daily-hero-stats { gap: 2rem; }
-  .daily-stat-num { font-size: 1.35rem; }
-  .section { padding: 4rem 2rem !important; }
-  .daily-features-grid { grid-template-columns: repeat(2, 1fr); }
-  .daily-story-grid { gap: 2.5rem; }
+  .collection .grid--4-col-desktop .grid__item {
+    width: calc(50% - 1.5rem) !important;
+  }
 }
 
 @media screen and (min-width: 990px) {

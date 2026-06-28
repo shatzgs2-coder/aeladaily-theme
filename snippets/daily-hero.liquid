@@ -1,0 +1,195 @@
+<div class="daily-hero">
+  <div class="daily-hero-overlay"></div>
+  <div class="daily-hero-content">
+    <span class="daily-hero-badge">New Collection 2026</span>
+    <h1 class="daily-hero-heading">aeladaily</h1>
+    <p class="daily-hero-subtitle">Natural materials. Wabi-sabi aesthetics. Timeless design.</p>
+    <p class="daily-hero-desc">Curated home essentials for slow, intentional living — from artisan workshops to your doorstep.</p>
+    <div class="daily-hero-cta">
+      <a href="{{ routes.all_products_collection_url }}" class="daily-btn daily-btn-primary">Shop Collection</a>
+      <a href="#brand-story" class="daily-btn daily-btn-secondary">Our Story</a>
+    </div>
+    <div class="daily-hero-stats">
+      <div class="daily-stat">
+        <div class="daily-stat-num">50+</div>
+        <div class="daily-stat-label">Handpicked Pieces</div>
+      </div>
+      <div class="daily-stat">
+        <div class="daily-stat-num">100%</div>
+        <div class="daily-stat-label">Natural Materials</div>
+      </div>
+      <div class="daily-stat">
+        <div class="daily-stat-num">€3</div>
+        <div class="daily-stat-label">Starting From</div>
+      </div>
+      <div class="daily-stat">
+        <div class="daily-stat-num">&#9733; 4.9</div>
+        <div class="daily-stat-label">Customer Rating</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.daily-hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  overflow: hidden;
+  background: linear-gradient(160deg,
+    #FEFCF8 0%,
+    #F5F0E8 25%,
+    #E8DCC8 50%,
+    #D8CCB2 75%,
+    #C4B094 100%
+  );
+}
+.daily-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 600px 400px at 30% 20%, rgba(107,91,62,0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 500px 350px at 70% 60%, rgba(160,136,104,0.08) 0%, transparent 65%),
+    radial-gradient(ellipse 400px 300px at 50% 90%, rgba(196,176,148,0.10) 0%, transparent 60%);
+  z-index: 0;
+}
+.daily-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  width: 100%;
+}
+.daily-hero-badge {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  background: rgba(107,91,62,0.1);
+  color: #6b5b3e;
+  border: 1px solid rgba(107,91,62,0.18);
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.daily-hero-heading {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: clamp(3.2rem, 6vw, 5.5rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.1 !important;
+  color: #3d3629 !important;
+  margin: 0 0 1rem !important;
+  letter-spacing: -1px !important;
+}
+.daily-hero-subtitle {
+  font-size: 1.2rem;
+  color: #6b5b3e;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.daily-hero-desc {
+  font-size: 1.05rem;
+  color: #8b7355;
+  max-width: 560px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+.daily-hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.daily-btn {
+  display: inline-block;
+  padding: 0.9rem 2.2rem;
+  border-radius: 37px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  transition: all 0.3s;
+  letter-spacing: 0.3px;
+}
+.daily-btn-primary {
+  background: #6b5b3e;
+  color: #FEFCF8;
+  border: none;
+}
+.daily-btn-primary:hover {
+  background: #5c4c35;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(107,91,62,0.3);
+  color: #ffffff;
+}
+.daily-btn-secondary {
+  background: transparent;
+  color: #3d3629;
+  border: 1.5px solid #C4B094;
+}
+.daily-btn-secondary:hover {
+  border-color: #6b5b3e;
+  color: #6b5b3e;
+  background: rgba(107,91,62,0.04);
+  transform: translateY(-2px);
+}
+.daily-hero-stats {
+  display: flex;
+  gap: 3.5rem;
+  justify-content: center;
+  margin-top: 4rem;
+  position: relative;
+  z-index: 1;
+}
+.daily-stat { text-align: center; }
+.daily-stat-num {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #3d3629;
+  font-family: 'Raleway', sans-serif;
+}
+.daily-stat-label {
+  font-size: 0.7rem;
+  color: #8b7355;
+  margin-top: 0.3rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* --- Responsive Hero --- */
+@media screen and (max-width: 749px) {
+  .daily-hero {
+    min-height: auto;
+    padding: 4rem 1.25rem 3rem;
+  }
+  .daily-hero-heading {
+    font-size: clamp(2.4rem, 8vw, 3.2rem) !important;
+  }
+  .daily-hero-subtitle { font-size: 1rem; }
+  .daily-hero-desc { font-size: 0.9rem; max-width: 100%; }
+  .daily-hero-cta {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  .daily-btn { text-align: center; }
+  .daily-hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+  }
+  .daily-stat-num { font-size: 1.3rem; }
+  .daily-hero-badge { font-size: 0.65rem; margin-bottom: 1.25rem; }
+}
+</style>
